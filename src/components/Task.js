@@ -1,5 +1,5 @@
 import {FaTimes} from 'react-icons/fa'
-import {useState} from 'react'
+
 export const Task = ({task, onDelete, onToggle}) => {
   return (
     <div className={`task ${task.reminder ? 'reminder': ''}` } onDoubleClick={() => onToggle(task.id)}>
